@@ -2,7 +2,6 @@ const computerChoiceDisplay = document.getElementById('computer-choice')
 const userChoiceDisplay = document.getElementById('user-choice')
 const resultDisplay = document.getElementById('result')
 const possibleChoices = document.querySelectorAll('button')
-let userChoice
 let computerChoice
 let result 
 var drawResult = 0
@@ -19,6 +18,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 }))
 
 function showGame() {
+let userChoice
   document.getElementById('container').style.display = 'inline-block'
   document.getElementById('intro').style.display = 'none'
 }
@@ -42,44 +42,44 @@ function getResult() {
   if (computerChoice === userChoice) {
     drawResult++
     result = 'draw!'
-    document.getElementById('computer-img').src = 'images/computer-draw.png'
-    document.getElementById('user-img').src = 'images/profile-draw.png'
+    document.getElementById('computer-img').src = 'computer-draw.png'
+    document.getElementById('user-img').src = 'profile-draw.png'
   }
   if (computerChoice === 'rock' && userChoice === 'paper') {
     winResult++
     result = 'win!'
-    document.getElementById('computer-img').src = 'images/computer-lose.png'
-    document.getElementById('user-img').src = 'images/profile-win.png'
+    document.getElementById('computer-img').src = 'computer-lose.png'
+    document.getElementById('user-img').src = 'profile-win.png'
   }
   if (computerChoice === 'rock' && userChoice === 'scissors') {
     loseResult++
     result = 'lose!'
-    document.getElementById('computer-img').src = 'images/computer-win.png'
-    document.getElementById('user-img').src = 'images/profile-lose.png'
+    document.getElementById('computer-img').src = 'computer-win.png'
+    document.getElementById('user-img').src = 'profile-lose.png'
   }
   if (computerChoice === 'paper' && userChoice === 'rock') {
     loseResult++
     result = 'lose!'
-    document.getElementById('computer-img').src = 'images/computer-win.png'
-    document.getElementById('user-img').src = 'images/profile-lose.png'
+    document.getElementById('computer-img').src = 'computer-win.png'
+    document.getElementById('user-img').src = 'profile-lose.png'
   }
   if (computerChoice === 'paper' && userChoice === 'scissors') {
     winResult++
     result = 'win!'
-    document.getElementById('computer-img').src = 'images/computer-lose.png'
-    document.getElementById('user-img').src = 'images/profile-win.png'
+    document.getElementById('computer-img').src = 'computer-lose.png'
+    document.getElementById('user-img').src = 'profile-win.png'
   }
   if (computerChoice === 'scissors' && userChoice === 'rock') {
     winResult++
     result = 'win!'
-    document.getElementById('computer-img').src = 'images/computer-lose.png'
-    document.getElementById('user-img').src = 'images/profile-win.png'
+    document.getElementById('computer-img').src = 'computer-lose.png'
+    document.getElementById('user-img').src = 'profile-win.png'
   }
   if (computerChoice === 'scissors' && userChoice === 'paper') {
     loseResult++
     result = 'lose!'
-    document.getElementById('computer-img').src = 'images/computer-win.png'
-    document.getElementById('user-img').src = 'images/profile-lose.png'
+    document.getElementById('computer-img').src = 'computer-win.png'
+    document.getElementById('user-img').src = 'profile-lose.png'
   }
   
   resultDisplay.innerHTML = result
