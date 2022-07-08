@@ -76,7 +76,7 @@
 
     #title {
       display: inline-block;
-      width: 500px;
+      width: 480px;
       height: 100%;
       font-size: 100px;
       font-weight: 900;
