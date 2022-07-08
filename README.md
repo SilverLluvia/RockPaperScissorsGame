@@ -200,13 +200,13 @@
     <h1 id="title">Rock<br>Paper<br>Scissors</h1>
     <main>
       <div id="computer-box">
-        <img src="images/computer-default.png" id="computer-img" alt="computer image"></img>
+        <img src="computer-default.png" id="computer-img" alt="computer image"></img>
         <p class="textfield">Computer: <span id="computer-choice">&emsp;&emsp;?</span></p>
       </div>
       <p style="font-size: 100px; display: inline;">VS</p>
       <div id="user-box">
         <p id="result"></p>
-        <img src="images/profile-default.png" id="user-img" alt="profile image"></img>
+        <img src="profile-default.png" id="user-img" alt="profile image"></img>
         <p class="textfield">You: &emsp;&ensp; <span id="user-choice">&emsp;&emsp;?</span><p>
       </div>
     </main>
