@@ -1,4 +1,3 @@
-# RockPaperScissorsGame
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -125,8 +124,9 @@
     #buttonField {
       position: absolute;
       display: inline-block;
-      margin-top: 200px;
-      width: 430px;
+      margin-top: 300px;
+      margin-left: -20px;
+      width: 500px;
       height: 100px;
       text-align: center;
     }
@@ -134,7 +134,7 @@
     #buttonField button {
       background: none;
       border: none;
-      font-size: 80px;
+      font-size: 100px;
       text-shadow: 2px 1px 2px black;
       animation: rotateButton 1s ease-in-out infinite;
     }
@@ -143,13 +143,13 @@
       font-size: 90px;
       cursor: pointer;
     } 
-    
+
     #rock:active, #scissors:active, #paper:active  {
       font-size: 90px;
       text-shadow: 2px 3px 5px black;
       cursor: pointer;
     } 
-    
+
     @keyframes rotateButton{
       0% { transform: rotate(0deg);}
       25% { transform: rotate(-2deg); }
@@ -159,11 +159,19 @@
     #score {
       position: absolute;
       display: inline-block;
-      margin: 300px 0px 0px 40px;
-      width: 170px;
+      margin: 450px 0px 0px 10px;
+      width: 460px;
+    }
+
+    #score h4 {
+      margin-left: 15px;
+      margin-bottom: 10px;
+      font-size: 30px;
     }
 
     #score h5 {
+      display: inline-block;
+      margin: 0px 15px;
       font-size: 30px;
     }
 
@@ -192,13 +200,13 @@
     <h1 id="title">Rock<br>Paper<br>Scissors</h1>
     <main>
       <div id="computer-box">
-        <img src="computer-default.png" id="computer-img" alt="computer image"></img>
+        <img src="images/computer-default.png" id="computer-img" alt="computer image"></img>
         <p class="textfield">Computer: <span id="computer-choice">&emsp;&emsp;?</span></p>
       </div>
       <p style="font-size: 100px; display: inline;">VS</p>
       <div id="user-box">
         <p id="result"></p>
-        <img src="profile-default.png" id="user-img" alt="profile image"></img>
+        <img src="images/profile-default.png" id="user-img" alt="profile image"></img>
         <p class="textfield">You: &emsp;&ensp; <span id="user-choice">&emsp;&emsp;?</span><p>
       </div>
     </main>
@@ -208,7 +216,7 @@
         <button id="paper">🖐🏻</button>
       </div>
       <div id="score">
-        <h5>&lt SCORE &gt</h5>
+        <h4>&lt SCORE &gt</h4>
         <h5>draw : <span id="draw-result">0</span></h5>
         <h5>win : <span id="win-result">0</span></h5>
         <h5>lose : <span id="lose-result">0</span></h5>
