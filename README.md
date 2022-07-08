@@ -126,7 +126,7 @@
       position: absolute;
       display: inline-block;
       margin-top: 200px;
-      width: 400px;
+      width: 430px;
       height: 100px;
       text-align: center;
     }
